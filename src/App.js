@@ -12,7 +12,8 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/"> 
+            {/* here exact is match the all name of link if there was no exact we cannot reach the other cause all the path start with / so dont forget to use exact */}
               <Home />
             </Route>
             <Route path="/create">
@@ -32,3 +33,7 @@ function App() {
 }
 
 export default App;
+
+// npx create-react-app "AppName" to create react app
+// npm start run is for run the project
+// when you push your project to github delete node_modules and when you want to install modules again write npm install to terminal(it is install according to package.json)
