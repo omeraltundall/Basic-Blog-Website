@@ -46,7 +46,7 @@ const Create = () => {
                 value={body}
                 onChange={handleChange(setBody)}></textarea>
                 <label>Blog author:</label>
-                <input type="text" required value={author} onChange={(e) => setAuthor(e.target.value)}/>
+                <input type="text" required value={author} onChange={handleChange(setAuthor)}/>
                 { !isPending ?<button>Add Blog</button>:<button disabled>Adding Blog...</button>}
             </form>
         </div>
