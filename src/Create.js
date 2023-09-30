@@ -43,6 +43,7 @@ const Create = () => {
                 <label>Blog body:</label>
                 <textarea 
                 required
+                rows="8"
                 value={body}
                 onChange={handleChange(setBody)}></textarea>
                 <label>Blog author:</label>
