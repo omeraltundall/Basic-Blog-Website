@@ -46,15 +46,8 @@ const Create = () => {
                 value={body}
                 onChange={handleChange(setBody)}></textarea>
                 <label>Blog author:</label>
-                <select
-                value={author}
-                onChange={handleChange(setAuthor)}>
-                    <option value="Mario">Mario</option>
-                    <option value="Luigi">Luigi</option>
-                    <option value="Yoshi">Yoshi</option>
-                </select>
-                { !isPending ?<button>Add Blog</button>:null}
-                {isPending ?<button disabled>Adding Blog...</button>:null}
+                <input type="text" required value={author} onChange={(e) => setAuthor(e.target.value)}/>
+                { !isPending ?<button>Add Blog</button>:<button disabled>Adding Blog...</button>}
             </form>
         </div>
      );
