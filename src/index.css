@@ -26,13 +26,17 @@
   text-decoration: none;
   padding: 6px;
 }
+.main-logo{
+  font-weight: bold;
+}
 .main-logo:hover{
   background-color: none;
   transition: 1000ms;
-  color: #f1356d;
+  color: #f7316c;
 }
 .links a{
   border-radius: 10px;
+  padding: 10px;
 }
 .links a:hover {
   transition: 300ms;
